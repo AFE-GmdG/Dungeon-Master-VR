@@ -1,0 +1,11 @@
+[gd_scene format=2]
+
+[node name="BaseMap" type="Spatial"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PlayerSpawnPoint" type="Position3D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}

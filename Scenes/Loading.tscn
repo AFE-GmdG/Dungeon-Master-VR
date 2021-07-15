@@ -36,14 +36,14 @@ color_ramp = SubResource( 2 )
 
 [sub_resource type="QuadMesh" id=6]
 
-[sub_resource type="Gradient" id=8]
+[sub_resource type="Gradient" id=7]
 offsets = PoolRealArray( 0, 0.407643, 1 )
 colors = PoolColorArray( 0, 0, 0, 0, 0.1, 0.1, 0.1, 1, 1, 1, 1, 0 )
 
-[sub_resource type="GradientTexture" id=9]
-gradient = SubResource( 8 )
+[sub_resource type="GradientTexture" id=8]
+gradient = SubResource( 7 )
 
-[sub_resource type="ParticlesMaterial" id=10]
+[sub_resource type="ParticlesMaterial" id=9]
 lifetime_randomness = 0.3
 emission_shape = 3
 emission_point_texture = ExtResource( 3 )
@@ -57,7 +57,7 @@ angle = 360.0
 angle_random = 1.0
 scale = 1.2
 scale_random = 0.5
-color_ramp = SubResource( 9 )
+color_ramp = SubResource( 8 )
 
 [node name="LoadingScene" type="Spatial"]
 __meta__ = {
@@ -97,8 +97,14 @@ lifetime = 2.2
 preprocess = 600.0
 randomness = 1.0
 draw_order = 2
-process_material = SubResource( 10 )
+process_material = SubResource( 9 )
 draw_pass_1 = SubResource( 6 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 4, 0 )
+light_color = Color( 0.354, 0.59, 0.59, 1 )
+shadow_enabled = true
+directional_shadow_max_distance = 400.0

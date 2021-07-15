@@ -6,14 +6,17 @@ namespace DungeonMasterVR.Scenes.Effects
     public class FadeToBlack : ColorRect
     {
 
+        #region Backing Fields
         private float _alpha = 1.0f;
         private bool _isFaded = false;
+        #endregion
+
+        #region Exported Properties
+        [Export]
+        public float Duration { get; set; } = 2.0f;
 
         [Export]
-        public float duration { get; set; } = 2.0f;
-
-        [Export]
-        public bool isFaded
+        public bool IsFaded
         {
             get => _isFaded;
             set
@@ -22,18 +25,22 @@ namespace DungeonMasterVR.Scenes.Effects
                 SetProcess(true);
             }
         }
+        #endregion
 
+        #region Signals
         [Signal]
         public delegate void FinishedFading();
+        #endregion
 
+        #region Overwritten Base Methods
         public override void _Process(float delta)
         {
             base._Process(delta);
-            if (isFaded)
+            if (IsFaded)
             {
                 if (_alpha < 1.0)
                 {
-                    _alpha = Mathf.Clamp(_alpha + (delta / duration), 0.0f, 1.0f);
+                    _alpha = Mathf.Clamp(_alpha + (delta / Duration), 0.0f, 1.0f);
                 }
                 else
                 {
@@ -45,7 +52,7 @@ namespace DungeonMasterVR.Scenes.Effects
             {
                 if (_alpha > 0.0)
                 {
-                    _alpha = Mathf.Clamp(_alpha - (delta / duration), 0.0f, 1.0f);
+                    _alpha = Mathf.Clamp(_alpha - (delta / Duration), 0.0f, 1.0f);
                 }
                 else
                 {
@@ -57,6 +64,8 @@ namespace DungeonMasterVR.Scenes.Effects
             Color = new Color(0.0f, 0.0f, 0.0f, _alpha);
             Visible = _alpha > 0.0f;
         }
+        #endregion
+
     }
 
 }

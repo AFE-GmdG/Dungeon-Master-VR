@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Title.png-1c19e5d253964ed8be29ea27ea0f7d0f.image"
+
+[deps]
+
+source_file="res://Textures/Title.png"
+dest_files=[ "res://.import/Title.png-1c19e5d253964ed8be29ea27ea0f7d0f.image" ]
+
+[params]
+

@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://Shaders/Cloud.shader" type="Shader" id=1]
+
+[resource]
+shader = ExtResource( 1 )
+shader_param/light_dir = Vector3( 0, 1, -1 )
+shader_param/cloud_cube_size = Vector3( 10, 10, 10 )
+shader_param/cloud_density_factor = 5.0
+shader_param/cloud_steps = 256

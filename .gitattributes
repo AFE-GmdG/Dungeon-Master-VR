@@ -1,0 +1,10 @@
+/.vscode                      export-ignore
+/External                     export-ignore
+/Screenshots                  export-ignore
+/.editorconfig                export-ignore
+/.gitattributes               export-ignore
+/.gitignore                   export-ignore
+/README.md                    export-ignore
+/project.godot                export-ignore
+/Dungeon-Master-VR.csproj     export-ignore
+/Dungeon-Master-VR.sln        export-ignore

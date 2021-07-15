@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Environment/procedural_Environment.tres" type="Environment" id=1]
+
+[node name="ProceduralEnvironment" type="WorldEnvironment"]
+environment = ExtResource( 1 )
+
+[node name="KeyLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.965926, 0.0885213, 0.24321, 0, -0.939693, 0.34202, 0.258819, -0.330366, -0.907674, 0, 10, 0 )
+light_energy = 1.5
+shadow_enabled = true
+shadow_color = Color( 0.6, 0.6, 0.6, 1 )
+directional_shadow_blend_splits = true
+directional_shadow_max_distance = 400.0
+__meta__ = {
+"_edit_lock_": true
+}

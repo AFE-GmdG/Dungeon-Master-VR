@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Sandstone_4k_Diff.png-e10607407e997aba521610c5cdb2d735.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Textures/Sandstone_4k/Sandstone_4k_Diff.png"
+dest_files=[ "res://.import/Sandstone_4k_Diff.png-e10607407e997aba521610c5cdb2d735.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=2
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=true
+flags/anisotropic=false
+flags/srgb=1
+process/fix_alpha_border=false
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

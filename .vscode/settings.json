@@ -22,4 +22,6 @@
 
   "omnisharp.enableEditorConfigSupport": true,
   "omnisharp.loggingLevel": "error",
+
+  "svg.preview.background": "dark-transparent",
 }

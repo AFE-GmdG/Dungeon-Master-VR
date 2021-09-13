@@ -1,0 +1,35 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  viewBox="0 0 16 16"
+>
+  <path
+    d="
+    M 8, 4 L 0, 0
+    M 8, 4 L16, 0
+    M 8,12 L 0,16
+    M 8,12 L16,16
+    "
+    fill="transparent"
+    stroke="#a0a0a0"
+    stroke-dasharray="0 2"
+    stroke-width="1.41"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="
+      M 8, 4 L 16, 8
+      M 8, 4 L  0, 8
+      M 8,12 L 16, 8
+      M 8,12 L  0, 8
+    "
+    fill="transparent"
+    stroke="#e0e0e0"
+    stroke-dasharray="0"
+    stroke-width="1"
+    stroke-linecap="round"
+  />
+
+</svg>

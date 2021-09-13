@@ -1,11 +1,28 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Maps/BaseMap.cs" type="Script" id=1]
+[ext_resource path="res://Environment/procedural_Environment.tres" type="Environment" id=2]
 
 [node name="BaseMap" type="Spatial"]
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="PlayerSpawnPoint" type="Position3D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 2 )
+
+[node name="Map" type="Spatial" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Static" type="Spatial" parent="Map"]
 __meta__ = {
 "_edit_lock_": true
 }

@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=2]
+
+[ext_resource path="res://Textures/Sandstone_4k/Sandstone_4k_Diff.png" type="Texture" id=1]
+[ext_resource path="res://Textures/Sandstone_4k/Sandstone_4k_Bump.png" type="Texture" id=2]
+[ext_resource path="res://Shaders/Sandstone.shader" type="Shader" id=3]
+
+[resource]
+shader = ExtResource( 3 )
+shader_param/bumpStrength = 0.5
+shader_param/albedoTex = ExtResource( 1 )
+shader_param/bumpTex = ExtResource( 2 )
